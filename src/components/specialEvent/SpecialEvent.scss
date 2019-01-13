@@ -1,0 +1,117 @@
+.c-NewsSection__Brexit{
+    padding-bottom: 2.5rem;
+    
+    // CSS Grid layout
+    .l-TeaserArticle__MainArticle, .l-TeaserArticle__SecondaryArticles{
+        grid-column: 1/-1;
+    }
+
+    @media only screen and (min-width: 740px){
+
+        .l-TeaserArticle__MainArticle{
+            grid-column: span 12;
+        }
+
+        .l-TeaserArticle__SecondaryArticles{
+            grid-column: span 6;           
+        }
+
+    }
+
+
+    @media only screen and (min-width: 980px) {
+
+        .l-TeaserArticle__MainArticle, .l-TeaserArticle__SecondaryArticles{
+            grid-column: span 4;
+        }
+
+    }
+
+    // hides certain elements of teaserArticle   
+    .l-TeaserArticle__SecondaryArticles .c-TeaserImage{
+        display: none;
+    }
+
+    .l-TeaserArticle__SecondaryArticles:nth-of-type(3) .c-TeaserText__Summary{
+        display: none;
+    }
+
+    // aesthetics of MainArticle
+    .l-TeaserArticle__MainArticle{
+        height: 15rem;
+        margin-bottom: 25%;
+        padding: 1.4rem;
+        border: 0.1rem solid #ccc1b7;
+        position: relative; 
+
+        .c-TeaserArticle{
+            flex-direction: column-reverse;
+        }
+
+        @media only screen and (min-width: 490px){
+            height: 10rem;
+            width: 72%;
+            margin-bottom: 0;
+        }
+
+        @media only screen and (min-width: 980px){
+            height: 16rem;
+            width: 85%;
+        }
+
+        .c-TeaserText{
+            @media only screen and (min-width: 490px){
+                margin-right: 35%;
+            }
+            @media only screen and (min-width: 980px){
+                margin-right: 0;
+            }
+
+        }
+
+
+        .c-TeaserText__Summary{
+            position: relative;
+            top: 1.5rem;
+        }
+
+        .c-TeaserImage{
+            height: 75%;
+            width: 75%;
+            position: absolute;
+            right: -0.1rem;
+            top: 14rem;            
+
+            @media only screen and (min-width: 490px){
+                height: 50%;
+                width: 50%;
+                position: absolute;
+                right: -22%;
+                top: -0.1rem; 
+            }  
+        
+            
+
+            @media only screen and (min-width: 980px){
+                height: 75%;
+                width: 75%;
+                position: absolute;
+                right: -0.1rem;
+                top: 15rem;
+            }
+        
+        }
+        
+    }
+
+    // aesthetics of SecondaryArticles
+    .l-TeaserArticle__SecondaryArticles{
+        position: relative;
+        bottom: 1rem;
+        .c-TeaserArticle{
+            border-bottom: 0.1rem #ccc1b7 solid;
+            padding: 0.75rem 0;
+        }
+    }
+
+}

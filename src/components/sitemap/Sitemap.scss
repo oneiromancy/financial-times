@@ -1,0 +1,67 @@
+.Footer{
+    overflow: hidden;
+    background-color: #262a33;
+}
+
+.c-Footer {
+    padding-bottom: 1.25rem;
+    margin: 0 0.8rem;
+
+    @media only screen and (min-width: 740px) {
+        margin: 0 auto;
+        width: 690px;
+    }
+    
+    @media only screen and (min-width: 980px) {
+        width: 935px;
+    }
+
+
+    @media only screen and (min-width: 1220px) {
+        width: 1175px;
+    }
+    
+}
+
+
+.c-FooterNavbar {
+    margin: 1rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-flow: dense;
+    grid-gap: 1rem;
+
+    .Navbar__Support, .Navbar__LegalAndPrivacy{
+        grid-column: span 6;
+    }
+
+    .Navbar__Services, .Navbar__Tools{
+        grid-column: span 12;
+    }
+
+    @media only screen and (min-width: 740px) {
+
+        .Navbar__Support, .Navbar__LegalAndPrivacy{
+            grid-column: span 3;
+        }
+
+        .Navbar__Services, .Navbar__Tools{
+            grid-column: span 6;
+        }
+
+    }
+  
+    @media only screen and (min-width: 980px) {
+
+        .Navbar__Support, .Navbar__LegalAndPrivacy{
+            grid-column: span 2;
+        }
+
+        .Navbar__Services, .Navbar__Tools{
+            grid-column: span 4;
+        }
+
+    }
+
+} 

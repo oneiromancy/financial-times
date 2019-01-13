@@ -1,0 +1,192 @@
+.c-NewsSection__Top-Stories {
+
+    // CSS Grid layout
+    .l-TeaserArticle {
+        grid-column: 1/-1;
+    }
+
+    @media only screen and (min-width: 490px) {
+
+        .l-TeaserArticle:nth-of-type(-n+2){
+            grid-column: span 6;
+        }
+
+    }
+
+    @media only screen and (min-width: 740px) {
+        margin: 0 auto;
+
+        .l-TeaserArticle:nth-of-type(n+3):nth-of-type(-n+6){
+            grid-column: span 3;
+        }
+
+        .l-TeaserArticle:nth-of-type(n+8){
+            grid-column: span 6;
+        }  
+
+    }
+
+    @media only screen and (min-width: 980px) {
+
+        .l-TeaserArticle:nth-of-type(n+3):nth-of-type(7){
+            grid-column: span 6;
+        }
+
+        .l-TeaserArticle:nth-of-type(n+8):nth-of-type(-n+9){
+            grid-column: span 3;
+        }
+
+    }
+
+    // hides certain elements of teaserArticle            
+    .l-TeaserArticle:nth-of-type(n+8){
+        .c-TeaserImage{
+            display: none;
+
+            @media only screen and (min-width: 740px){
+                display: block;
+            }
+        }
+
+    } 
+
+    .l-TeaserArticle:nth-of-type(8), .l-TeaserArticle:nth-of-type(9){
+        .c-TeaserImage{
+            display: none;
+        }
+    }
+
+    .l-TeaserArticle:nth-of-type(1){
+
+        .c-TeaserImage{
+            display: none;
+        }
+
+        .c-Teaserarticle__RelatedHeadlines{
+            display: none;
+
+            @media only screen and (min-width: 980px){
+                display: block;
+            }
+        }
+
+    } 
+
+    .l-TeaserArticle:nth-of-type(n+3):nth-of-type(-n+6){
+
+        .c-TeaserImage{
+            
+            display: none;
+
+            @media only screen and (min-width: 740px){
+                display: block;
+            }
+
+        }
+    }
+
+    .l-TeaserArticle:nth-of-type(2), .l-TeaserArticle:nth-of-type(7){
+        .c-TeaserText__Summary{
+            display: none;
+        }
+    }
+
+    // Aesthetics of TeaserArticles
+    .l-TeaserArticle:nth-of-type(1){
+        padding: 1rem;
+        padding-top: 0;
+
+        .c-TeaserText__Title--typography{
+            font-size: 1.75rem;
+
+            @media only screen and (min-width: 740px){
+                font-size: 2.75rem;
+                line-height: 2.75rem;
+            }
+
+        }
+        .c-TeaserText__Summary{
+            margin: 1rem 0;
+        }        
+        .c-TeaserText__Summary--typography{
+            font-size: 1.25rem;
+        }
+
+        .c-RelatedHeadlines__ListItems{
+            margin: 1rem 0;
+
+            li{
+                margin: 0.25rem 1rem;
+            }
+        }
+        
+    } 
+
+    .l-TeaserArticle:nth-of-type(n+8):nth-of-type(-n+9){
+        background-color: #f2dfce;
+        padding: 10px 20px;
+        
+        .c-TeaserText {
+            line-height: 25px;
+            .c-TeaserText__Title--typography{
+                font-size: 1.75rem;
+            }
+            .c-TeaserText__Summary--typography{
+                font-size: 1.25rem;
+            }
+
+            .c-TeaserText__Title{
+                margin: 2rem 0;
+            }
+        }
+
+    }
+
+    .l-TeaserArticle:nth-of-type(n+3):nth-of-type(-n+6){
+        border-bottom: 0.1rem #ccc1b7 solid;
+        @media only screen and (min-width: 740px){
+            border-style: none;
+        }
+    }
+
+    .l-TeaserArticle:nth-of-type(2), .l-TeaserArticle:nth-of-type(7){
+        text-align: center;
+
+        .c-TeaserText{
+
+            line-height: 26px;
+            background-color: #f2dfce;
+            padding: 25px 8px;
+
+            .c-TeaserText__Title--typography{
+                font-size: 1.5rem;
+            }
+
+        }
+    
+        .c-TeaserImage {
+            background: linear-gradient( #fff1e5, #fff1e5,#f2dfce);
+
+            img{
+                height: 100%;
+                width: 70%;
+            }
+        }
+
+    }
+
+    .l-TeaserArticle:nth-of-type(n+10){
+
+        border-bottom: 0.1rem #ccc1b7 solid;
+        
+        .c-TeaserArticle{
+            flex-direction: row;
+            .c-TeaserImage{
+                height: 10rem;
+                width: 10rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+}

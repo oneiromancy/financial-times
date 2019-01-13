@@ -1,0 +1,54 @@
+.c-NewsSection__Life-and-Arts{
+
+    // CSS grid layout
+
+    .l-TeaserArticle{
+        grid-column: 1/-1;
+    }
+
+    @media only screen and (min-width: 740px){
+
+        .l-TeaserArticle{
+            grid-column: span 6;
+        }
+
+    }
+
+    @media only screen and (min-width: 980px) {
+
+        .l-TeaserArticle:nth-of-type(-n+2){
+            grid-column: span 6;
+        }
+
+        .l-TeaserArticle:nth-of-type(n+3){
+            grid-column: span 4;
+        } 
+
+    }
+
+    // hides certain elements of teaserArticle
+
+    .c-TeaserText__Summary{
+        display: none;
+    }
+
+    .c-TeaserImage{
+        display: none;
+
+        @media only screen and (min-width: 740px){
+            display: block;
+        }
+
+    }
+    
+    // handles border style of teaserArticles 
+    .l-TeaserArticle{
+        border-bottom: 0.1rem #ccc1b7 solid;
+
+        @media only screen and (min-width: 740px){
+            border-style: none;
+        }
+
+    }
+
+}

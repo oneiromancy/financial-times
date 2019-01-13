@@ -1,0 +1,25 @@
+.c-GridRow--addBackgroundColor{
+    background-color: #f2dfce;
+}
+
+.c-GridRow__ContentWrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem; 
+
+  
+    @media only screen and (min-width: 740px) {
+      width: 690px;
+      margin: 1.5rem auto;
+    }
+      
+    @media only screen and (min-width: 980px) {
+        flex-direction: row;
+        width: 935px;
+    }
+      
+    @media only screen and (min-width: 1220px) {
+      width: 980px;
+    } 
+  
+}

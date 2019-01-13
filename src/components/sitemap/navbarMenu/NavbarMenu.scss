@@ -1,0 +1,47 @@
+.Navbar__MenuHeader {
+    margin-bottom: 0.8rem;
+
+    color: white;
+    font-weight: bold;
+}
+
+.Menu__ListItems {
+    margin: 0;
+    list-style-type: none;
+    
+    li{
+        padding: 0.5rem 0;
+
+        a {
+            color: #a8aaad;
+        }
+    }
+
+}
+
+.Navbar__Services, .Navbar__Tools{
+    -webkit-columns: 2;
+            columns: 2;
+
+    border-top: 0.1rem solid #51555c;
+
+    padding-top: 1rem;
+
+    & ul{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+
+    .Navbar__Services, .Navbar__Tools {
+        border-style: none;
+        padding: 0;
+        
+        & ul{
+            display: block;
+        }
+    }
+
+}
+    

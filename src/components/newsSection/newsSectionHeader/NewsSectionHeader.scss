@@ -1,0 +1,21 @@
+.NewsSection__Header{
+    margin-bottom: 1rem;
+}
+
+.NewsSection__Header--typography{
+    color: black;
+    font-size: 1.4rem;
+}
+
+.NewsSection__Header--addBorder {
+    position: relative;
+    bottom: 0.5rem;
+
+    border-top: 0.5rem solid black;
+    padding-top: 0.7rem;
+
+    @media only screen and (min-width: 980px){   
+        width: 20rem;
+    }
+
+}

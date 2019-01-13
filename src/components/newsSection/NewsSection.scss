@@ -1,0 +1,10 @@
+.c-NewsSection--addBorder{
+    border-top: 0.5rem solid rgba(0, 0, 0, 0.05);
+}
+
+.c-NewsSection__Headlines--gridDesign{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-flow: dense;
+    grid-gap: 1.25rem;
+}

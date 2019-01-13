@@ -1,0 +1,37 @@
+.c-NewsSection__Most-Read{
+    // GridRow component displays content as flexbox. MostRead is one of the props.children components
+    flex-basis: 33%;
+
+    @media only screen and (min-width: 980px){
+        margin-left: 1.5rem;
+    }
+
+    // CSS Grid layout
+    .l-MostRead__articleList{
+        margin-left: 1rem;
+        grid-column: 1/-1;
+    }
+
+    // hides certain elements of teaserArticle    
+    .c-TeaserImage, .c-TeaserText__Topic, .c-TeaserText__Summary{
+        display: none;
+    }
+
+    // aesthetics of teaserArticle
+    .l-TeaserArticle{
+        font-size: 1.5rem;
+        margin: 1rem 0.5rem;
+        
+        .c-TeaserText__Title{
+            margin-left: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 0.1rem #ccc1b7 solid;
+        }
+
+        .c-TeaserText__Title--typography{
+            font-size: 1.15rem;
+            color: black;
+        }
+    }
+
+}
