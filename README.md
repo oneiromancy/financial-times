@@ -2,7 +2,7 @@
 
 Click here [here](https://www.ft.com/) to check the original website
 
-My [version](https://oneiromancy.github.io/responsiveui/) tries to mimick the responsiveness of the 
+My [version](https://oneiromancy.github.io/responsiveui/) tries to mimic the responsiveness of the 
 website's design. 
 
 This project was built with ReactJS because its component reusability features tend to facilitate the
