@@ -1,11 +1,13 @@
-## A Responsive UI design based on the Financial Times (FT) website
+# A Responsive UI design based on the Financial Times (FT) homepage
 
-Click here [here](https://www.ft.com/) to check the original website
+### Description
 
-My [version](https://oneiromancy.github.io/responsiveui/) tries to mimic the responsiveness of the 
-website's design. 
+This [project](https://oneiromancy.github.io/responsiveui/) was created for my own learning purposes, particularly, with a focus on responsive design and a mobile-first approach to web development.
 
-This project was built with ReactJS because its component reusability features tend to facilitate the
-maintainability of a large HTML codebase. Given the static nature of the FT website, GatsbyJS could be
-an option to support the use of ReactJS in deployment instead of a templating engine such as handlebars.js, 
-pug.js, etc.
+This [link](https://www.ft.com/) will direct you to the FT's homepage.
+
+## Built With
+
+* HTML
+* CSS/SASS
+* ReactJS
